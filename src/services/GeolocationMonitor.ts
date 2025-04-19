@@ -81,7 +81,7 @@ export class GeolocationMonitor {
 
 		for (const node of this.nodeList) {
 			counter++;
-			//logger.info(`Getting host detail for [${counter}] ${node.host}`);
+			// logger.info(`Getting host detail for [${counter}/${this.nodeList.length}] ${node.host}`);
 
 			try {
 				const hostDetail = await HostInfo.getHostDetail(node.host);
